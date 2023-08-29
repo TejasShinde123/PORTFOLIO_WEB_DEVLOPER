@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title  %} ABOUT {% endblock title %}
+
+{% block body %}
+
+
+
+
+<style>
+    body {
+      margin: 10;
+      padding: 20;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      font-size: 30px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-img {
+      position: relative;
+      max-width: 200px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    
+
+    .skills {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+  <title>About Me - Tejas</title>
+</head>
+<body>
+  <div class="container">
+    <img class="profile-img" src="/static/img/tejas.jpg" alt="Tejas Profile Picture">
+    <style>
+      /* Your existing CSS styles */
+  
+      /* Animation keyframes */
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-100%);
+        }
+
+        50% {
+          transform: translateY(-165%);
+        }
+
+        100% {
+          transform: translateY(0);
+        }
+      }
+  
+      .hero-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+        animation: slideIn 1s ease-in-out;
+      }
+  
+      /* Other styles */
+    </style>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm Tejas</h1>
+      </div>
+    </section>
+    <br>
+    <p>
+      I am a passionate web developer with a strong command of Python programming language and its Django framework. I love turning ideas into functional and elegant web applications that make a difference. 
+    </p>
+    <p>
+      My journey in web development started with HTML and CSS, which I now use to craft visually appealing and user-friendly interfaces. I also have a solid understanding of SQL and database management. I can manipulate data effectively and have hands-on experience with various database management systems.
+    </p>
+    <p>
+      With a background in computer science and a thirst for learning, I am committed to staying up-to-date with the latest web technologies and trends. I'm always excited to take on new challenges and collaborate with creative minds to create impactful online experiences.
+    </p>
+    <p class="skills">
+      Skills: Python, Django, HTML, CSS, SQL, Database Management
+    </p>
+  </div>
+
+
+{% endblock body %}

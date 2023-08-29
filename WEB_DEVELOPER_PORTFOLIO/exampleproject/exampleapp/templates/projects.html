@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title  %} PROJECTS {% endblock title %}
+
+{% block body %}
+
+<style>
+    body {
+      margin: 10;
+      padding: 20;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .album {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .album img {
+      max-width: 100%;
+    }
+
+    .album h2 {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .album p {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+  <title>My Projects</title>
+</head>
+<body>
+  <div class="container">
+    <h1>My Projects</h1>
+    <div class="albums">
+      <div class="album">
+        <img src="project1.jpg" alt="Project 1">
+        <h2>Project 1</h2>
+        <p>A description of Project 1.</p>
+      </div>
+      <div class="album">
+        <img src="project2.jpg" alt="Project 2">
+        <h2>Project 2</h2>
+        <p>A description of Project 2.</p>
+      </div>
+      <div class="album">
+        <img src="project3.jpg" alt="Project 3">
+        <h2>Project 3</h2>
+        <p>A description of Project 3.</p>
+      </div>
+      <!-- Add more album divs as needed -->
+    </div>
+  </div>
+
+{% endblock body %}

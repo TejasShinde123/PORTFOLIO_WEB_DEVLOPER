@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block title  %}contact{% endblock title %}
+
+{% block body %}
+
+<style>
+
+    /* Animation property */
+download-button {
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+    body {
+      margin: 10;
+      padding: 20;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .social-link {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .social-link img {
+      width: 30px;
+      height: auto;
+    }
+
+    .download-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .email {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+  <title>Tejas's Links</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Connect with Tejas</h1>
+    <a href="https://www.hackerrank.com/tejasanilshinde1" class="social-link">
+      <img src="/static/img/linkedinlogo.png" alt="LinkedIn Logo">
+    </a>
+    <a href="https://github.com/TejasShinde123" class="social-link">
+      <img src="/static/img/githublogo.png" alt="GitHub Logo">
+    </a>
+    <a href="https://instagram.com/tejas_a_shinde?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" class="social-link">
+      <img src="/static/img/instagramlogo.jpg" alt="Instagram Logo">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100056825587343" class="social-link">
+      <img src="/static/img/facebooklogo.png" alt="Facebook Logo">
+    </a>
+    <a href="https://www.hackerrank.com/tejas/" class="social-link">
+      <img src="/static/img/hackerranklogo.jpg" alt="HackerRank Logo">
+    </a>
+    <div class="email">Email: tejasanilshinde1@gmail.com</div>
+    <a href="/static/tejas_shinde_resume.pdf" download class="download-button">Download Resume</a>
+  </div>
+
+{% endblock body %}

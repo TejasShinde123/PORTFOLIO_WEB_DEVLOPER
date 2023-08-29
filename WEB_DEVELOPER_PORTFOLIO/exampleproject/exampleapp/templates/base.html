@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title  %}{% endblock title %}
+        tejasportfolio</title>
+</head>
+<body>
+    
+<html>
+<head>
+<style>
+  /* Add some basic styling to the navigation bar */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="/home">Home</a>
+  <a href="/about">About</a>
+  <a href="/projects">Projects</a>
+  <a href="/contact">Contact</a>
+</div>
+
+
+{% block body %}{% endblock body %}
+
+
+</html>
+
+</body>
+
+<style>
+  /* Your existing CSS styles */
+
+  .portfolio-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-bottom: 10px;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .portfolio-footer p {
+    font-size: 14px;
+  }
+
+  /* Global footer styles */
+  footer {
+    margin-top: 150px;
+    text-align: bottom;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<!-- Your existing HTML content -->
+
+<footer class="portfolio-footer">
+  <div class="social-icons">
+    <a href="https://www.hackerrank.com/tejasanilshinde1" class="social-link">
+      <img src="/static/img/linkedinlogo.png" alt="LinkedIn Logo">
+    </a>
+    <a href="https://github.com/TejasShinde123" class="social-link">
+      <img src="/static/img/githublogo.png" alt="GitHub Logo">
+    </a>
+    <a href="https://instagram.com/tejas_a_shinde?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" class="social-link">
+      <img src="/static/img/instagramlogo.jpg" alt="Instagram Logo">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100056825587343" class="social-link">
+      <img src="/static/img/facebooklogo.png" alt="Facebook Logo">
+    </a>
+    <a href="https://www.hackerrank.com/tejas/" class="social-link">
+      <img src="/static/img/hackerranklogo.jpg" alt="HackerRank Logo">
+    </a>  </div>
+  <p>&copy; 2023 Tejas Shinde. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

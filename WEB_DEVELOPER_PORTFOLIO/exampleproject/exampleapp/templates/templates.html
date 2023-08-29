@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title  %} index{% endblock title %}
+
+{% block body %} 
+  <style>
+
+
+
+    /* .container2 {
+      margin: 0;
+      padding:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #ffffff;
+    } */
+
+    .carousel {
+      overflow: hidden;
+      width: 80%;
+      max-width: 800px;
+      position: relative;
+    }
+
+    .carousel-slide {
+      display: none;
+      width: 100%;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel-slide img {
+      align-items: center;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+  <title>Image Carousel</title>
+</head>
+<body>
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="/static/img/passion.jpeg" alt="Image 1" width="500" height="600" >
+        </div>
+        <div class="carousel-slide">
+          <img src="/static/img/analytics.jpeg" alt="Image 2" width="500" height="600" >
+        </div>
+        <div class="carousel-slide">
+          <img src="/static/img/view.jpeg" alt="Image 3" width="500" height="600" >
+        </div>
+      </div>
+      <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+          slides[currentSlide].style.display = 'none';
+          slides[index].style.display = 'block';
+          currentSlide = index;
+        }
+
+        function nextSlide() {
+          const nextIndex = (currentSlide + 1) % slides.length;
+          showSlide(nextIndex);
+        }
+
+        // Initial setup
+        showSlide(currentSlide);
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+      </script>
+
+</body>
+</html>
+
+
+{% endblock body %}

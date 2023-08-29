@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title  %}HOME{% endblock title %}
+
+{% block body %} 
+<style>
+
+.container{
+    text-align: center;
+}
+
+.welcome{
+    margin: 20px 20px;
+    font-size: 80px;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#hero {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+</style>
+<div class="container">
+    <div class="hero-content">
+        <p class="welcome">Welcome</p>
+        <br>
+        <h2>
+            Being a web developer is always difficult. It’s a creative job, but one where usually you aren’t the primary stakeholder.
+    I know how it feels to use your creative juices to perfect a piece of code, only to have someone else ask for a sudden change in a different direction.
+    So many web developers can relate to that experience.
+    I’m sure you know how it feels
+    <br><br>
+    “A website without visitors is like a ship lost in the horizon.”
+    – Dr. Christopher Dayagdag
+        </h2>
+        <br>
+        
+        <a href="/contact" class="cta-button">Get In Touch</a>
+        <a href="/about" class="cta-button">See About Me </a>
+        <a href="/projects" class="cta-button">See What I Did</a>
+    </div>
+</div>  
+  
+
+{% endblock body %}
